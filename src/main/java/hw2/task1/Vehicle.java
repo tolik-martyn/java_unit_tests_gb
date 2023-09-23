@@ -6,7 +6,7 @@ public abstract class Vehicle {
     protected int yearRelease;
     protected int numWheels;
     protected int speed;
-    public Vehicle(String company, String model, int yearRelease, int numWheels, int speed) {
+    protected Vehicle(String company, String model, int yearRelease, int numWheels, int speed) {
         this.company = company;
         this.model = model;
         this.yearRelease = yearRelease;
