@@ -42,7 +42,7 @@ public class Main {
         comparatorDbl.compareAndPrint(list7, list8);
 
         /*
-         Код не скомпенсируются, так как аргументы имеют разный тип данных (так и было задумано)
+         Код не компилируется, так как аргументы имеют разный тип данных (так и было задумано)
          comparatorDbl.compareAndPrint(list5, list8);
          comparatorInt.compareAndPrint(list5, list8);
         */
