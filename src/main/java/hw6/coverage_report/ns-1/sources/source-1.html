@@ -1,0 +1,130 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251"> 
+  <title>Coverage Report > ListComparator</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">hw6</a>
+</div>
+
+<h1>Coverage Summary for Class: ListComparator (hw6)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ListComparator</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (2/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (7/7)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package hw6;
+&nbsp;
+&nbsp;/**
+&nbsp; * Класс для сравнения двух списков и вывода сообщения на консоль.
+&nbsp; *
+&nbsp; * @param &lt;T&gt; тип чисел в списках (целочисленный или дробный).
+&nbsp; */
+<b class="fc">&nbsp;class ListComparator&lt;T extends Number&gt; {</b>
+&nbsp;    /**
+&nbsp;     * Сравнивает два NumberList и выводит сообщение на консоль.
+&nbsp;     *
+&nbsp;     * @param list1 первый список для сравнения.
+&nbsp;     * @param list2 второй список для сравнения.
+&nbsp;     */
+&nbsp;    public void compareAndPrint(NumberList&lt;T&gt; list1, NumberList&lt;T&gt; list2) {
+<b class="fc">&nbsp;        int comparisonResult = list1.compareTo(list2);</b>
+&nbsp;
+<b class="fc">&nbsp;        if (comparisonResult &gt; 0) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Первый список имеет большее среднее значение&quot;);</b>
+<b class="fc">&nbsp;        } else if (comparisonResult &lt; 0) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Второй список имеет большее среднее значение&quot;);</b>
+&nbsp;        } else {
+<b class="fc">&nbsp;            System.out.println(&quot;Средние значения равны&quot;);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-11 00:04</div>
+</div>
+</body>
+</html>
